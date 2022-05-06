@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Miguel Grassi">
+    <link rel="canonical" href="https://migrassi.github.io/BienalSur2023/index_viejo/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Proyecto xxxxx - El alambrado</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Proyecto xxxxx", url: "#_top", children: [
+              {title: "Robot b\u00e1sico", url: "#robot-basico" },
+              {title: "Elementos visuales", url: "#elementos-visuales" },
+              {title: "Elementos interactivos", url: "#elementos-interactivos" },
+              {title: "Fundamentos conceptuales", url: "#fundamentos-conceptuales" },
+              {title: "Otras posibilidades t\u00e9cnicas", url: "#otras-posibilidades-tecnicas" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+
+    <h1 id="proyecto-xxxxx">Proyecto xxxxx</h1>
+<p>Este es un proyecto del colectivo artístico formado por Ignacio Fourmentel y Miguel Grassi para presentar en la <a href="https://bienalsur.org/es/page/convocatoria-abierta">convocatoria de BienalSur 2023</a>. El colectivo está formado por los miembros del área de arte robótico del Laboratorio de Arte Electrónico e Inteligencia Artificial (LAEIA) de la Universidad Nacional de Tres de Febrero (UNTREF): Ignacio Fourmentel y Miguel Grassi.</p>
+<h2 id="robot-basico">Robot básico</h2>
+<p>La instalación estaría constituida fundamentalmente por un robot que se desplaza por un espacio físico tridimensional controlado por cables de acero y tres (o seis) motores paso a paso fijados a paredes y/o soportes de pie.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Esquemas de funcionamiento" src="../imagenes/CableDrivenRobots.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong><em>Tipos de robots accionados por cables de acero</em></strong> - <em>Barnett, Gosselin (2015)</em></td>
+</tr>
+</tbody>
+</table>
+<p>Ese robot portaría un conjunto de pixel LEDs (WS2811 o similar) formando paneles, una serie de anillos superpuestos u otro cuerpo similar a determinar, constituyendo una pieza de alrededor de 30 cm de ancho y otros tantos de altura que denominaremos Cabezal. </p>
+<p>El Cabezal, suspendido en el aire por tres o seis cables de acero, podría desplazarse dentro de un espacio cúbico imaginario de alrededor de 3 metros de aristas. Los LEDs estarían controlados por un ESP32 on board en el propio Cabezal. Se contempla la posibilidad de incluir en el mismo la batería que alimenta todo el conjunto, para evitar cableado desde la instalación fija al Cabezal móvil. Las posibilidades de comunicación inalámbrica (WiFi y BT LE) del ESP32 permiten el control externo sin dificultad.</p>
+<p>Una o más cámaras externas son sincronzadas electrónicamente con los movimientos del robot y con el control de sus elementos lumínicos. Esa actividad sincronizada permite la generación de imágenes no sintéticas de gran variedad y riqueza visual, constituyéndose un instrumento de fuerte potencial expresivo. </p>
+<video controls autoplay loop width="100%">
+    <source src="imagenes/test2.mp4"  type="video/mp4">
+</video>
+
+<h2 id="elementos-visuales">Elementos visuales</h2>
+<p>Inicialmente se considera la idea de representar en el aire figuras  lumínicas tridimensionales sólo visibles mediante una cámara utilizando conceptos fotográficos y cinematográficos tales como Light Painting, Light Writing, Bokeh, Time Lapse y Stop Motion. Las imágenes pueden ser abstractas o figurativas, si se incorporan personas u objetos al espacio y pueden ser vistas por el público, en tiempo real, en pantallas o proyecciones in situ y en forma remota por internet.</p>
+<p><img alt="Light painting" src="../imagenes/lp4.jpg" />
+    <img src="imagenes/lp1.jpg" alt="Light painting" width="50%"/><img src="imagenes/lp3.jpg" alt="Light painting" width="50%"/>
+    <img src="imagenes/lp5.jpg" alt="Light painting" width="50%"/><img src="imagenes/lp2.jpg" alt="Light painting" width="50%"/></p>
+<h2 id="elementos-interactivos">Elementos interactivos</h2>
+<p>El público puede interactuar con la obra de diferentes maneras. La más simple consiste en ingresar al espacio captado por las cámaras, alterando con su presencia y movimiento los patrones generados. En forma remota es posible modificar parámetros de generación de luz y movimientos, influyendo así sobre los resultados visuales generados.</p>
+<h2 id="fundamentos-conceptuales">Fundamentos conceptuales</h2>
+<p>El uso de los recursos foto y cinematográficos mencionados se vincula fuertemente con la idea del tiempo, la memoria, la persistencia y la percepción humana de estas variables. La posibilidad de desplazamiento físico y temporal simultánea y controlada que brinda este robot permite el desarrollo de múltiples conceptos que se pueden alinear con varios de los ejes curatoriales de la convocatoria, especialmente Memorias y Olvidos, Modos de Ver y Constelaciones Fluidas.</p>
+<p>La idea de relacionar las visuales con la pesca comercial indiscriminada en la milla 200 del litoral marítimo argentino encuentra además relación con el eje Conciencia Ecológica.</p>
+<h2 id="otras-posibilidades-tecnicas">Otras posibilidades técnicas</h2>
+<p>Cambiando el elemento portado por el Cabezal, el dispositivo robótico planteado permitiría su uso en múltiples diferentes formas de expresión artística. Montando en el mismo una cámara, por ejemplo, puede actuar como un scanner tridimensional de gran escala, para capturar modelos 3D de personas u otros objetos de tamaño similar mediante técnicas de fotogrametría.  </p>
+<p><img alt="Fotogrametría" src="../imagenes/bodyScan.jpg" /></p>
+<p>Si, en cambio, se le instala un extrusor adecuado, se podrían generar objetos de gran tamaño mediante técnicas similares a las de la impresión 3D utilizando todo tipo de materiales experimentales, en diversas formas creativas.</p>
+<p><img alt="Large Scale 3D Printing" src="../imagenes/LargeScale3DPrint.png" /></p>
+
+  <br>
+    
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content"><p>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 </a>  - 2022.
+<br>
+  Documentation built by Miguel Grassi with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="">Windmill Dark</a> theme.</p>
+</footer>
+
+</body>
+</html>
